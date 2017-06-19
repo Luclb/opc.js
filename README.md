@@ -11,19 +11,27 @@ The following instructions will allow you to configure your opc server so that y
 
 What you'll need:
 
-* **Jquery** 
-* **KepServerEx** with the IoT option
+* [Jquery](https://jquery.com/) 
+
+		```
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		```
+	
+		OR
+
+		```
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		```
+*  [jquery Toast](https://github.com/kamranahmedse/jquery-toast-plugin)
+
+		```
+		<script type="text/javascript" src="js/jquery.toast.min.js"></script>
+		```
+
+* [KepServerEx](https://www.kepware.com/en-us/products/kepserverex/) with the IoT option or any OPC server with a RESTful Server option
+
 * **Basic knowledge** in industrial automation and web development.
-* ** [Jquery-toast-plugin]** (https://github.com/kamranahmedse/jquery-toast-plugin)
 
-
-```
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-```
-OR
-```
-<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-```
 
 
 # Installing
