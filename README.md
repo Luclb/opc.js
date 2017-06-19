@@ -13,20 +13,20 @@ What you'll need:
 
 * [Jquery](https://jquery.com/) 
 
-		```
+		
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		```
+		
 	
 		OR
 
-		```
-		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		```
+		
+		<script	src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		
 *  [jquery Toast](https://github.com/kamranahmedse/jquery-toast-plugin)
 
-		```
+		
 		<script type="text/javascript" src="js/jquery.toast.min.js"></script>
-		```
+		
 
 * [KepServerEx](https://www.kepware.com/en-us/products/kepserverex/) with the IoT option or any OPC server with a RESTful Server option
 
@@ -50,10 +50,10 @@ You can read multiple types of variable types with this library.
 You should always specify the type of variable you want to write or read so that opc.js can react accordingly.
 
 ### opc.js general classes:
-```
+
 * **opcVar** *required*: general opc variable. It will automaticaly update its state after reading the value from the OPC server.
 * **opcWrite** *optional*: Works as the previous one, but will also write the value if the user changes it.
-```
+
 
 ### opc.js variable classes:
 
