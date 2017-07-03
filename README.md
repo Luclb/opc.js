@@ -7,7 +7,7 @@ This project can be used particularly if you want to create a smooth user interf
 
 The following instructions will allow you to configure your opc server so that you can read and write data. It uses the IoT functionnality of the KepserverEx OPC server, which is a RESTFul server.
 
-### Prerequisites
+#### Prerequisites
 
 What you'll need:
 
@@ -42,18 +42,18 @@ You can use website builders such as wordpress, wix, google sites...
 
 To link the variables, opc.js uses a RESTful client to communicate with the opc server.
 
-## Setting the data types of your variables
+#### Setting the data types of your variables
 
 You can read multiple types of variable types with this library.
 You should always specify the type of variable you want to write or read so that opc.js can react accordingly.
 
-### opc.js general classes:
+#### opc.js general classes:
 
 * **opcVar** *required*: general opc variable. It will automatically update its state after reading the value from the OPC server.
 * **opcWrite** *optional*: Works as the previous one, but will also write the value if the user changes it.
 
 
-### opc.js variable classes:
+#### opc.js variable classes:
 
 
 * **opcButton**: 
@@ -114,7 +114,7 @@ You'll find here a list of the parameters that you need to check or change, as w
 
 ##Linking the app and the OPC server
 
-### The database 
+#### The database 
 	* Import the db.sql file into your own database,
 	* Configure your dbconfig.php file,
 	
