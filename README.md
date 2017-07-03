@@ -112,13 +112,18 @@ To allow the app to access the OPC Server, you must configure a couple of things
 
 You'll find here a list of the parameters that you need to check or change, as well as a [Youtube ](https://Symea.fr) video turorial.
 
-##Linking the app and the OPC server
+## Linking the app and the OPC server
 
 #### The database 
 	* Import the db.sql file into your own database,
 	* Configure your dbconfig.php file,
 	
+## OPC Server Configuration
 
+As specified before, we used a KepWare solution which allows you to use an opc server freely for up to 2 hours continiuously 
+
+![Server Configuration ](docs/images/servConfig.png)
+Format: ![Configuration du serveur](url)
 
 ## Authors
 
@@ -134,7 +139,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Thanks to ICAM, site de Bretagne, who allowed us to build this project.
-* Jean Jacque LE PAPE, responsable du projet,
-* David FASANI, tuteur du projet informatique,
-* Damien DREAN, tuteur du projet automatisme;
-
+* Jean Jacque LE PAPE, responsible of the project,
+* David FASANI, web development tutor,
+* Damien DREAN, automation tutor;
