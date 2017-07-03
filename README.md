@@ -15,10 +15,8 @@ What you'll need:
 
 		
 		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		
-	
-		OR
 
+		OR
 		
 		<script	src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 		
@@ -51,7 +49,7 @@ You should always specify the type of variable you want to write or read so that
 
 ### opc.js general classes:
 
-* **opcVar** *required*: general opc variable. It will automaticaly update its state after reading the value from the OPC server.
+* **opcVar** *required*: general opc variable. It will automatically update its state after reading the value from the OPC server.
 * **opcWrite** *optional*: Works as the previous one, but will also write the value if the user changes it.
 
 
@@ -59,10 +57,18 @@ You should always specify the type of variable you want to write or read so that
 
 
 * **opcButton**: 
+	* *opcRead is required*
 	* on write: will write True of False in the variable;
 	* on read: will toggle the "active" state of the button (usually pressed or not pressed);
 		```
-		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
+		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcRead opcVar opcButton opcWrite">Something</button>
+		```
+
+* **opcPushBtn**: 
+* *opcRead is NOT  required*
+Works just like a opcButton but once the user releases the button, it returns to the value 0. 
+		```
+		<button type="button" id="myOpcBooleanVar" class="btn btn-info  opcVar opcPushBtn opcWrite">Something</button>
 		```
 
 * **opcSwitch**: 
@@ -71,7 +77,7 @@ Functions just as the button, but the *checked* property is added or removed ins
 	* on write: will write True of False in the variable;
 	* on read: will toggle the "checked" state of the switch;
 		```
-		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcButton opc Write">Something</button>
+		<button type="button" id="myOpcBooleanVar" class="btn btn-info opcVar opcSwitch opc Write">Something</button>
 		```
 
 * **opcText** :
@@ -82,8 +88,8 @@ opcText uses the html() function of Jquery. Therefore you can use it to display 
 		```
 		<table>
 		  <tr>
-		    <th>Parametre</th>
-		    <th>Valeur</th> 
+		    <th>Parameter</th>
+		    <th>Value</th> 
 		  </tr>
 		  <tr>
 		    <td>Jill</td>
@@ -92,6 +98,26 @@ opcText uses the html() function of Jquery. Therefore you can use it to display 
 		 </table>
 		```
 
+
+* **opcTextWrite**: 
+If used in an <input>, it will update the value of the linked variable in the OPC Server.
+```
+<input id="myVar" class="opcWriteText varOPC opcText opcAdmin" max='15' min='0' type="number"  value="5">
+```
+
+
+
+# OPC Side
+To allow the app to access the OPC Server, you must configure a couple of things.
+
+You'll find here a list of the parameters that you need to check or change, as well as a [Youtube ](https://Symea.fr) video turorial.
+
+##Linking the app and the OPC server
+
+### The database 
+	* Import the db.sql file into your own database,
+	* Configure your dbconfig.php file,
+	
 
 
 ## Authors
