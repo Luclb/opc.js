@@ -122,7 +122,7 @@ You'll find here a list of the parameters that you need to check or change, as w
 
 As specified before, we used a KepWare solution which allows you to use an opc server freely for up to 2 hours continiuously 
 
-![Server Configuration ](https://github.com/Luclb/opc.js/blob/master/docs/images/servConfig.png)
+![Server Configuration ](https://github.com/Luclb/opc.js/blob/master/docs/images/serverConfiguration.JPG)
 
 ## Authors
 
