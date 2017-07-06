@@ -122,8 +122,7 @@ You'll find here a list of the parameters that you need to check or change, as w
 
 As specified before, we used a KepWare solution which allows you to use an opc server freely for up to 2 hours continiuously 
 
-![Server Configuration ](docs/images/servConfig.png)
-Format: ![Configuration du serveur](url)
+![Server Configuration ](/docs/images/servConfig.png)
 
 ## Authors
 
