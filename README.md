@@ -120,7 +120,10 @@ You'll find here a list of the parameters that you need to check or change, as w
 	
 ## OPC Server Configuration
 
-As specified before, we used a KepWare solution which allows you to use an opc server freely for up to 2 hours continiuously 
+As specified before, we used a KepWare solution which allows you to use an opc server freely for up to 2 hours continiuously.
+In the docs section of my GitHub, there is a documentation that shows you how to configure the IotGateWay and an OPC Server
+
+*Once configured correctly, the parameters should look like this.
 
 ![Server Configuration ](https://github.com/Luclb/opc.js/blob/master/docs/serverConfiguration.JPG)
 
